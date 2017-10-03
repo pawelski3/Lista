@@ -26,8 +26,6 @@ class Node {
     public $next;
     public $value;
 	public $nr;
-	
-	
 }
 
 class Lista {
@@ -40,8 +38,6 @@ class Lista {
 		$this->n=new Node;
 		$this->n->value=$w;
 		$this->n->nr=$this->nr;
-		
-	
 		
 		echo "<br>Konstruktor utworzył obiekt ".__class__;
 		B::c();
@@ -57,23 +53,12 @@ class Lista {
 		$this->nr++;
 		$r->nr=$this->nr;
 		
-		//$c=intval("0"||false);
-		//$r->next=null;
-		//$this->n->next=$r;
-		//echo "<br>Utworzyłem obiekt dla $w, null = $c ";
+		
 		while ($activ->next!=null)
 		{
 		$activ=$activ->next;
-		
 		}
 		$activ->next=$r;
-		
-		
-		/*if ($this->n->next==null)
-		{
-		$this->n=new Node($w);
-		$this->n->value=$w;
-		echo "<br>Utworzyłem obiekt dla $w";}*/
 		
 	}
 
@@ -117,9 +102,9 @@ $nowy=new Lista(3<<1);
 $nowy->nowy($Y);
 $nowy->nowy("we"-1?"1.3ff"+5:false);
 $nowy->nowy("0g" or 0?"1.3ff"+5:false);
-$nowy->nowy("0" and "-0"?"1.3ff"+5:false);
+$nowy->nowy("-0"?"Reluktancja":"");
 $nowy->nowy("0g" && "-0"?"1.3ff"+1:false);
-$nowy->nowy("go go");
+$nowy->nowy("Kapacytancja - opór bierny pojemnościowy");
 $nowy->pisz();
 
 $nowy->ile();
