@@ -64,9 +64,7 @@ class Lista {
 
 	
 	public function pisz(){
-		echo "<br><pre>";
-		print_r($this->n);
-		echo "<br></pre>";
+		B::write($this->n);
 	}
 	
 	
